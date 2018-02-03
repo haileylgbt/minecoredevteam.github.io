@@ -1,0 +1,11 @@
+---
+# This ensures that Jekyll reads this file
+---
+
+@import "fonts"; // Custom Fonts
+@import "nav";   // Navigation bar
+
+* {
+	font-family: "Minecorian", sans-serif;
+	font-size: 1.25rem;
+}
