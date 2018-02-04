@@ -1,0 +1,18 @@
+// Content
+
+.content {
+	position: absolute;
+
+	&:not(.slim) {
+		top: 100%;
+	}
+
+	&.slim {
+		top: 50%;
+	}
+
+	&:not(.fluid) {
+		width: 90%;
+		left: 5%;
+	}
+}
