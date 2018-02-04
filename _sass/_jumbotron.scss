@@ -1,0 +1,52 @@
+// Jumbotron
+
+.jumbotron {
+	// Background image with parallax scrolling
+	background-image: url("/public/media/home.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// Positioning and Size
+	position: absolute;
+	top: 0px;
+	width: 100%;
+
+	&:not(.slim) {
+		height: 100%;
+	}
+
+	&.slim {
+		height: 50%;
+	}
+
+	&:before {
+		content: "";
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+
+	.jumbotron-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		// Absolute position
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0px;
+
+		font-size: 2.5rem !important;
+		color: #ffffff;
+
+		p {
+			text-align: center;
+		}
+	}
+}

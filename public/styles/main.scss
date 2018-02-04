@@ -2,8 +2,9 @@
 # This ensures that Jekyll reads this file
 ---
 
-@import "fonts"; // Custom Fonts
-@import "nav";   // Navigation bar
+@import "fonts";     // Custom Fonts
+@import "nav";       // Navigation bar
+@import "jumbotron"; // Jumbotron content
 
 body {
 	font-family: "Minecorian", sans-serif;
