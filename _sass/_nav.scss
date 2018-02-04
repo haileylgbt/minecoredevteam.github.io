@@ -1,2 +1,43 @@
 // Navigation bar
 
+nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 2.5rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 1.5rem;
+
+	a {
+		margin-right: 0.25rem;
+		display: flex;
+		align-items: center;
+		z-index: 9999;
+		text-decoration: none;
+		color: #c2c2c2;
+		height: 80%;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+
+		&.active {
+			color: #ffffff;
+		}
+
+		&:not(.nav-brand) {
+			transition: .5s;
+			border: 1px solid rgba(224, 224, 224, 0);
+			border-radius: 2px;
+		}
+
+		&:hover:not(.nav-brand):not(.active) {
+			color: #ffffff;
+			border-color: rgba(224, 224, 224, 1);
+		}
+	}
+
+	.nav-brand {
+		span {
+			color: #25c52e;
+		}
+	}
+}
