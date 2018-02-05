@@ -2,6 +2,10 @@
 
 .content {
 	position: absolute;
+	z-index: 1;
+	background-color: white;
+	width: 90%;
+	margin-bottom: 10rem;
 
 	&:not(.slim) {
 		top: 100%;
@@ -12,7 +16,11 @@
 	}
 
 	&:not(.fluid) {
-		width: 90%;
-		left: 5%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+
+	&.fluid {
+		width: 100%;
 	}
 }
